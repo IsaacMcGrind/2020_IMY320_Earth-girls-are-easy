@@ -130,8 +130,108 @@ body {
   75%  { right: 100px; top: 500px;}
   100% { right: 0px; top: 0px;}
 }
+
+.modal-body {
+  width: fit-content;
+}
 /*=======================================================================================
                                     End Of  Animations
 =======================================================================================*/
   /*---------------------------Dayne----------------------------------*/
+  * {
+    box-sizing: border-box;
+  }
+  h2
+  {
+      font-size: 100px;
+      color: red;
+  }
   
+  a {
+    color: #FFF200;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .img2
+  {
+      width:90%;
+      height: 520px;
+      padding-top :30px;
+  }
+  
+  img
+  {
+      width:80%;
+      height: 400px;
+      padding-top :10px;
+      /* display: flex; */
+  }
+  
+  .header {
+    padding: 60px;
+    text-align: center;
+    border: 15px solid #FFF200;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    /* width: 33.33%; */
+    padding: 10px;
+    height: 2500px; /* Should be removed. Only for demonstration */
+    text-align: center;
+  }
+  
+  .para
+  {
+      padding-top: 20px;
+      color: white;
+      width: 100%;
+      font-size: 30px;
+  }
+  
+  .left {
+    width: 14%;
+    border-left: 15px solid;
+    border-color: #FFF200;
+  
+  }
+  
+  .icons
+  {
+      position: absolute;
+  }
+  
+  .right {
+    width: 14%;
+    border-right: 15px solid;
+    border-color: #FFF200;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .mid1 {
+    width: 72%;
+  }
+  /* .mid2 {
+    width: 36%;
+  } */
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

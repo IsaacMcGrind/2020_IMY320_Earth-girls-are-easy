@@ -2,41 +2,41 @@
   <app-nav></app-nav>
   <div id="profiles" class="container text-warning">
     <div class="row">
-      <div id="prof" class="col-md-6 col-lg-3">
+      <div id="prof" class="col-md-6 col-lg-3" (click)="open(contentID)">
         <div class="card">
-          <img id="image"class="card-img-top img-fluid" src="assets/img/2.jpg">
+          <img id="image" class="card-img-top img-fluid" src="assets/img/2.jpg">
           <div class="card-block">
-            <h3 class="card-title">Node.js Training</h3>
+            <h3 class="card-title">Object ID</h3>
             <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              euismod tincidunt ut laoreet dolore .</p>
           </div>
         </div>
       </div>
-      <div id="prof1" class="col-md-6 col-lg-3">
+      <div id="prof1" class="col-md-6 col-lg-3" (click)="open(content2)">
         <div class="card">
           <img id="image" class="card-img-top img-fluid" src="assets/img/pic2.png">
           <div class="card-block">
-            <h3 class="card-title">Node.js Training</h3>
+            <h3 class="card-title">Project Tree</h3>
             <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
               euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
         </div>
       </div>
-      <div id="prof2" class="col-md-6 col-lg-3">
+      <div id="prof2" class="col-md-6 col-lg-3" (click)="open(content)">
         <div class="card">
           <img id="image" class="card-img-top img-fluid" src="assets/img/wail1.jpg">
           <div class="card-block">
-            <h3 class="card-title">Node.js Training</h3>
+            <h3 class="card-title">Wailing In The Woods</h3>
             <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              euismod tincidunt ut laoreet dolore magna </p>
           </div>
         </div>
       </div>
-      <div id="prof3" class="col-md-6 col-lg-3">
+      <div id="prof3" class="col-md-6 col-lg-3" (click)="open(content4)">
         <div class="card">
           <img id="image" class="card-img-top img-fluid" src="assets/img/undraw.png">
           <div class="card-block">
-            <h3 class="card-title">Node.js Training</h3>
+            <h3 class="card-title">Project Tree</h3>
             <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
               euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
@@ -44,80 +44,210 @@
       </div>
     </div>
   </div>
-
-  <!--<div class="container">
-   
-  
-  <div class="col-md-6 col-lg-2">
-    <div class="card p-3">
-       <img src="../../assets/img/em_bars.png class="card-img-top img-fluid" alt="">
-       <div class="card-block">
-          <div>
-             <p class="font-weight-bold">Search</p>
-             <p>Perform a generic search. Enter a keyword and get results based
-                on that keyword.</p>
-          </div>
-       </div>
-    </div>
- </div>
-</div>
-
-</body>-->
-  <!--<body>
-
-    <div class="container">
-        <app-nav></app-nav>
-    </div>
-
-    <div class="container text-muted">
-
-        
-
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/img/node.png">
-                    <div class="card-block">
-                        <h3 class="card-title">Node.js Training</h3>
-                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/img/react.png">
-                    <div class="card-block">
-                        <h3 class="card-title">Node.js Training</h3>
-                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/img/mongo.png">
-                    <div class="card-block">
-                        <h3 class="card-title">Node.js Training</h3>
-                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="/img/webpack.png">
-                    <div class="card-block">
-                        <h3 class="card-title">Node.js Training</h3>
-                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div>
-            </div>
+  <!--=======================================================================================
+                                    OBJECT ID
+  =======================================================================================-->
+  <ng-template #contentID let-modal>
+    <!--<div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>-->
+    <div class="modal-body">
+      <div class="header">
+        <div class="icons">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
         </div>
+        <h1>ObjectID</h1>
+        <p> IDing your your car should be as easy as breathing </p>
+      </div>
+      <div class="row">
+        <div div class="column right" style="background-color:black;">
+        </div>
+        <div class="column mid1" style="background-color:black;">
+          <img class="img2" src="assets/img/2.jpg" alt="Girl in a jacket">
+          <div class="para" style="background-color:black">
+            <p> Name : ObjectID </p>
+            <p> Initialized: 2020 </p>
+            <p> Creators: Ctrl + Intelligence </p>
+            <p> History:<br><br />
+              ObjectID is a system which aims to analyse and store information on vehicles that have been identified by
+              CCTV camera's, it is then able to identify vehicles based on what it has learnt from these images. What
+              sets it apart from the of the shelf offering is the ability to recognise vehicles based on their damage or
+              distinguishing features. As a user you can login into the system, and once logged into the system you can
+              search to find vehicles matching some criteria.
+            </p>
+            <p> Link to Repository: <a href="https://github.com/COS301-SE-2020/ObjectID-Backend">Repo</a></p>
+          </div>
+          <img src="assets/img/11.jpg" alt="Girl in a jacket">
+          <img src="assets/img/16.jpg" alt="Girl in a jacket">
 
-       
+        </div>
+        <div div class="column left" style="background-color:black;">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </ng-template>
+  <!--=======================================================================================
+                                   Project Tree
+    =======================================================================================-->
+    <ng-template #content2 let-modal>
+      <!--<div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>-->
+      <div class="modal-body">
+        <div class="header">
+          <div class="icons">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </div>
+          <h1>Project Tree</h1>
+          <p> The last Project Management tool you'll ever need </p>
+      </div>
+      <div class="row">
+        <div div class="column right" style="background-color:black;">
+        </div>
+        <div class="column mid1" style="background-color:black;">
+          <img class="img2" src="assets/img/undraw_Tree_swing_646s (1).png" alt="Girl in a jacket">
+           <div class="para" style="background-color:black">
+              <p> Name :  Project Tree </p>
+              <p> Initialized:  2020 </p>
+              <p> Creators: The B-Team </p>
+              <p> History:<br><br/>
+                  A project started by the The B-Team, commissioned by EpiUse for a software engineering module COS301
+                  at the university of Pretoria. Project Tree is s project management system specifically deisnged for large 
+                  corparations to create Projects and tasks with certain dependencies and view those tasks in a graphical form
+                  for easier viewing.
+              </p>
+              <p> Link to Website: <a href="https://projecttree.herokuapp.com/">Website</a></p>
+              <p> Link for Mobile download: <a href="https://drive.google.com/file/d/1xgWt-K9mzN6L9JeMkQ-rF9eO_YAiVuRY/view?usp=sharing">App Download</a></p>
+          </div>
+          <img src="assets/img/Calendar.png" alt="Girl in a jacket">
+          <img src="assets/img/Dashboard.png" alt="Girl in a jacket">
+          <img src="assets/img/Graph.png" alt="Girl in a jacket">
+      
+          </div>
+        <div div class="column left" style="background-color:black;">
+        </div>
+      </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+      </div>
+    </ng-template>
+  <!--=======================================================================================
+                                    Wailing In The Woods
+    =======================================================================================-->
+  <ng-template #content let-modal>
+    <!--<div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>-->
+    <div class="modal-body">
+      <div class="header">
+        <div class="icons">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
+        </div>
+        <h1>Wailing in the Woods</h1>
+        <p> Nobody survives the woods </p>
+      </div>
+      <div class="row">
+        <div div class="column right" style="background-color:black;">
+        </div>
+        <div class="column mid1" style="background-color:black;">
+          <img class="img2" src="assets/img/wail1.jpg" alt="Girl in a jacket">
+          <div class="para" style="background-color:black">
+            <p> Name : Wailing in the Woods </p>
+            <p> Initialized: 2020 </p>
+            <p> Creators: Earth girls are Easy </p>
+            <p> History:<br><br />
+              A short film produced by Earth Girls are easy as part of the IMY 320 module at University of Pretoria.
+            </p>
+            <p> Link to Repository: <a href=""> In development </a></p>
+          </div>
+          <img src="assets/img/wail3.jpg" alt="Girl in a jacket">
+          <img src="assets/img/images (1).jpg" alt="Girl in a jacket">
+          <img src="assets/img/wail4.png" alt="Girl in a jacket">
+
+        </div>
+        <div div class="column left" style="background-color:black;">
+        </div>
+      </div>
 
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </ng-template>
+  <!--=======================================================================================
+                                   Project Tree
+    =======================================================================================-->
+    <ng-template #content4 let-modal>
+      <!--<div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>-->
+      <div class="modal-body">
+        <div class="header">
+          <div class="icons">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </div>
+          <h1>Project Tree</h1>
+          <p> The last Project Management tool you'll ever need </p>
+      </div>
+      <div class="row">
+        <div div class="column right" style="background-color:black;">
+        </div>
+        <div class="column mid1" style="background-color:black;">
+          <img class="img2" src="assets/img/undraw_Tree_swing_646s (1).png" alt="Girl in a jacket">
+           <div class="para" style="background-color:black">
+              <p> Name :  Project Tree </p>
+              <p> Initialized:  2020 </p>
+              <p> Creators: The B-Team </p>
+              <p> History:<br><br/>
+                  A project started by the The B-Team, commissioned by EpiUse for a software engineering module COS301
+                  at the university of Pretoria. Project Tree is s project management system specifically deisnged for large 
+                  corparations to create Projects and tasks with certain dependencies and view those tasks in a graphical form
+                  for easier viewing.
+              </p>
+              <p> Link to Website: <a href="https://projecttree.herokuapp.com/">Website</a></p>
+              <p> Link for Mobile download: <a href="https://drive.google.com/file/d/1xgWt-K9mzN6L9JeMkQ-rF9eO_YAiVuRY/view?usp=sharing">App Download</a></p>
+          </div>
+          <img src="assets/img/Calendar.png" alt="Girl in a jacket">
+          <img src="assets/img/Dashboard.png" alt="Girl in a jacket">
+          <img src="assets/img/Graph.png" alt="Girl in a jacket">
+      
+          </div>
+        <div div class="column left" style="background-color:black;">
+        </div>
+      </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+      </div>
+    </ng-template>
 </body>
