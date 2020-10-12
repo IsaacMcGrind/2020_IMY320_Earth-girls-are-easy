@@ -6,7 +6,7 @@ html {
     position: absolute;
     width: 100%;
     top: 0;
-    left: -400px;
+    left: -450px;
     z-index: 99;
     transition: background 0.4s, all 0.3s linear;
   }

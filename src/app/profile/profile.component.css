@@ -3,12 +3,12 @@ html {
 }
 body {
     background-color: black;
-    background-image: url("../../assets/img/poles.jpg");
+   /* background-image: url("../../assets/img/poles.jpg");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     color: white;
@@ -56,7 +56,7 @@ body {
                                       Animations
 =======================================================================================*/
 #prof {
-  animation:changeColor 5s infinite;
+  animation:changeColor 10s infinite;
   transition:all 0.2s ease-in;
 }
 #prof:hover{
@@ -75,7 +75,7 @@ body {
 }
 
 #prof1 {
-  animation:changeColor1 12s infinite;
+  animation:changeColor1 18s infinite;
   transition:all 0.2s ease-in;
 }
 #prof1:hover{
@@ -94,7 +94,7 @@ body {
 }
 
 #prof2 {
-  animation:changeColor2 12s infinite;
+  animation:changeColor2 18s infinite;
   transition:all 0.2s ease-in;
 }
 #prof2:hover{
