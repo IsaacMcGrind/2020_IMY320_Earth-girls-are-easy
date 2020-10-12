@@ -6,7 +6,7 @@ import { NavComponent } from "./nav/nav.component";
 //import { CanActivateRouteGuard } from "./can-activate-route.guard";
 const routes: Routes = [
   {
-    path: "home",
+    path: "",
     component: HomeComponent
    // canActivate: [CanActivateRouteGuard],
   },
